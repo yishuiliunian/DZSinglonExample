@@ -7,11 +7,14 @@
 //
 
 #import "DZAppDelegate.h"
+#import "DZSinglonARC.h"
 
 @implementation DZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    id a = [DZSinglonARC shareInstance];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

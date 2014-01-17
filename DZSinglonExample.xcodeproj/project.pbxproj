@@ -19,6 +19,9 @@
 		65AA468C188922F300916BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AA4674188922F300916BA6 /* UIKit.framework */; };
 		65AA4694188922F300916BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65AA4692188922F300916BA6 /* InfoPlist.strings */; };
 		65AA4696188922F300916BA6 /* DZSinglonExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA4695188922F300916BA6 /* DZSinglonExampleTests.m */; };
+		65AA46A1188927A100916BA6 /* DZSinglonARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA46A0188927A100916BA6 /* DZSinglonARC.m */; };
+		65AA46A41889306900916BA6 /* DZSinglonARCOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA46A31889306900916BA6 /* DZSinglonARCOrigin.m */; };
+		65AA46A7188930C200916BA6 /* DZSinglonNoARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA46A6188930C200916BA6 /* DZSinglonNoARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		65AA4691188922F300916BA6 /* DZSinglonExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DZSinglonExampleTests-Info.plist"; sourceTree = "<group>"; };
 		65AA4693188922F300916BA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65AA4695188922F300916BA6 /* DZSinglonExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZSinglonExampleTests.m; sourceTree = "<group>"; };
+		65AA469F188927A000916BA6 /* DZSinglonARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSinglonARC.h; sourceTree = "<group>"; };
+		65AA46A0188927A100916BA6 /* DZSinglonARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSinglonARC.m; sourceTree = "<group>"; };
+		65AA46A21889306900916BA6 /* DZSinglonARCOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSinglonARCOrigin.h; sourceTree = "<group>"; };
+		65AA46A31889306900916BA6 /* DZSinglonARCOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSinglonARCOrigin.m; sourceTree = "<group>"; };
+		65AA46A5188930C200916BA6 /* DZSinglonNoARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSinglonNoARC.h; sourceTree = "<group>"; };
+		65AA46A6188930C200916BA6 /* DZSinglonNoARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSinglonNoARC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,12 @@
 				65AA4680188922F300916BA6 /* DZAppDelegate.m */,
 				65AA4682188922F300916BA6 /* Images.xcassets */,
 				65AA4677188922F300916BA6 /* Supporting Files */,
+				65AA469F188927A000916BA6 /* DZSinglonARC.h */,
+				65AA46A0188927A100916BA6 /* DZSinglonARC.m */,
+				65AA46A21889306900916BA6 /* DZSinglonARCOrigin.h */,
+				65AA46A31889306900916BA6 /* DZSinglonARCOrigin.m */,
+				65AA46A5188930C200916BA6 /* DZSinglonNoARC.h */,
+				65AA46A6188930C200916BA6 /* DZSinglonNoARC.m */,
 			);
 			path = DZSinglonExample;
 			sourceTree = "<group>";
@@ -240,7 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AA46A1188927A100916BA6 /* DZSinglonARC.m in Sources */,
+				65AA46A41889306900916BA6 /* DZSinglonARCOrigin.m in Sources */,
 				65AA4681188922F300916BA6 /* DZAppDelegate.m in Sources */,
+				65AA46A7188930C200916BA6 /* DZSinglonNoARC.m in Sources */,
 				65AA467D188922F300916BA6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
